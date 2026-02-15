@@ -1,10 +1,10 @@
-import { SafeAreaView } from "react-native-safe-area-context";
-import { Text } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { Tabs } from "../navigation/Tabs";
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Mood Journal MVP</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Tabs />
+    </NavigationContainer>
   );
 }
